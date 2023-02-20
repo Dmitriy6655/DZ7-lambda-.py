@@ -19,15 +19,16 @@
 # 5 10 15 20 25 30
 # 6 12 18 24 30 36 |
 
+
 a = int(input("Enter rows:"))
 b = int(input("Enter columns:"))
 
 
-def print_operation_table(operation,x,y):
+def print_operation_table(operation, x, y):
     for i in range(1, x + 1):
         print("\n")
         for j in range(1, y + 1):
             print(i * j, end='\t')
 
 
-print_operation_table(lambda x, y: x * y,a,b)
+print_operation_table(lambda x, y: x * y, a, b)
