@@ -24,11 +24,12 @@ a = int(input("Enter rows:"))
 b = int(input("Enter columns:"))
 
 
-def print_operation_table(operation, x, y):
-    for i in range(1, x + 1):
+def print_operation_table(operation, f, t):
+    for i in range(1, f + 1):
         print("\n")
-        for j in range(1, y + 1):
-            print(i * j, end='\t')
+        for j in range(1, t + 1):
+            res = operation(i, j)
+            print(res, end='\t')
 
 
 print_operation_table(lambda x, y: x * y, a, b)
